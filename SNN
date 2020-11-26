@@ -33,5 +33,5 @@ for i in range (50) :
     outputP = 0
   print((x,"or", y, "is : ", outputP)
   
-  outputP= 1/(1+numpy.exp(-outpuntP)) #sigmoid function
+  outputP= 1/(1+numpy.exp(-outputP)) #sigmoid function
   
