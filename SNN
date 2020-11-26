@@ -5,7 +5,7 @@
 import numpy, random, os
 lr = 1 #learning rate
 bias = 1 #values of bias
-weights =[random,random(),random,random(),random,random()] #weights generated in a list (3 weights in total for 2 neurons and the bias)
+weights =[random.random(),random.random(),random.random()] #weights generated in a list (3 weights in total for 2 neurons and the bias)
 
 def Perceptron(input1, input2, output):
   outputP = input1*weights[0]+input2*weights[1]+bias*weights[2]
@@ -31,7 +31,7 @@ for i in range (50) :
     outputP= 1
   else :
     outputP = 0
-  print((x,"or", y, "is : ", outputP)
+  print(x,"or", y, "is : ", outputP)
   
   outputP= 1/(1+numpy.exp(-outputP)) #sigmoid function
   
